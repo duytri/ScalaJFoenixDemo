@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.thesis.controller.MainController">
+   <children>
+      <ImageView fitHeight="94.0" fitWidth="103.0" layoutX="33.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@uit_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="47.0" prefHeight="29.0" prefWidth="476.0" text="CHƯƠNG TRÌNH TÌM KIẾM VĂN BẢN TƯƠNG ĐỒNG THEO CHỦ ĐỀ" textFill="#f22020" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="63.0" prefHeight="16.0" prefWidth="367.0" text="Luận văn cao học - Học viên: Nguyễn Hồ Duy Trí" textFill="#515151" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="49.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="81.0" prefHeight="14.0" prefWidth="411.0" text="Lớp KHMT Khóa 9 đợt 2 - Trường Đại học Công Nghệ Thông Tin - ĐHQG TP.HCM" textFill="#867e7e" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="67.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="105.0" prefHeight="361.0" prefWidth="638.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Nội dung cần xét độ tương đồng" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0" />
+            <JFXTextArea fx:id="searchingContent" focusColor="#01a0b5" layoutX="14.0" layoutY="21.0" prefHeight="125.0" prefWidth="608.0" text="Programming languages have traditionally had more data types than database systems. The flexibility of abstract types could make a database system more useful in supporting application development. Abstract types allow users to think about and manipulate data in terms and structures that they are familiar with. This paper proposes that databases have a type system interface and describes a representation of a type system in terms of relations. The type system model supports a variety of programming language constructs, such as user-defined parameterized data types and user-defined generic operations. The efficiency of the type system is compared to the access time of the database system." unFocusColor="RED" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="26.0" />
+            <Label layoutX="15.0" layoutY="167.0" text="Số kết quả cần hiển thị" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="163.0" />
+            <Label layoutX="237.0" layoutY="163.0" text="Kết quả" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="163.0" />
+            <JFXTextField fx:id="noOfResult" focusColor="#01a0b5" layoutX="13.0" layoutY="187.0" prefHeight="24.0" prefWidth="187.0" promptText="0" text=" 8" unFocusColor="RED" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="186.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></JFXTextField>
+            <JFXListView fx:id="resultsView" prefHeight="166.0" prefWidth="411.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="186.0" />
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="242.0" onAction="#search" prefHeight="65.0" prefWidth="141.0" ripplerFill="RED" text="Tìm kiếm" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
